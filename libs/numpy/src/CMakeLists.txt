@@ -17,6 +17,9 @@ add_library(boost_numpy ${LIBRARY_TYPE}
   ufunc.cpp
   numpy.cpp
 )
+
+set_target_properties(boost_numpy PROPERTIES
+  COMPILE_FLAGS "/MT")
 target_link_libraries(boost_numpy ${Boost_LIBRARIES} ${PYTHON_LIBRARIES})
 
 install(TARGETS boost_numpy 
