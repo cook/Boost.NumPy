@@ -14,3 +14,4 @@ build-vc90
 build-vc100
 *~
 \#*\#
+/_build*
