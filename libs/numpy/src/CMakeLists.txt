@@ -21,7 +21,7 @@ add_library(boost_numpy ${LIBRARY_TYPE}
 if (MSVC)
   set(_cxxFlags "/MT /DBOOST_PYTHON_STATIC_LIB")
 endif ()
-set_target_properties(${target} PROPERTIES
+set_target_properties(boost_numpy PROPERTIES
   COMPILE_FLAGS ${_cxxFlags})
 
 target_link_libraries(boost_numpy ${Boost_LIBRARIES} ${PYTHON_LIBRARIES})
