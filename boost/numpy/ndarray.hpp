@@ -137,6 +137,9 @@ public:
    *  @internal This is simply a call to PyArray_Return();
    */
   python::object scalarize() const;
+  public:
+    ndarray()
+        :python::object() {}
 };
 
 /**
